@@ -1,4 +1,4 @@
-// Upcount 2-bit Counter
+// Upcount Counter 2-bit
 module Counter_2 (
 	// Global signals
 	input 						clock,

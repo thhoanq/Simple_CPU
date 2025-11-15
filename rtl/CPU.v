@@ -82,7 +82,6 @@ Mux mux (
 Reg_9 reg_ir (
 	// Global signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iRin(IRin),
 	.iR(IDIN[8:0]),
@@ -93,7 +92,6 @@ Reg_9 reg_ir (
 Reg_16 reg_r0 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[0]),
@@ -104,7 +102,6 @@ Reg_16 reg_r0 (
 Reg_16 reg_r1 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[1]),
@@ -115,7 +112,6 @@ Reg_16 reg_r1 (
 Reg_16 reg_r2 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[2]),
@@ -126,7 +122,6 @@ Reg_16 reg_r2 (
 Reg_16 reg_r3 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[3]),
@@ -137,7 +132,6 @@ Reg_16 reg_r3 (
 Reg_16 reg_r4 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[4]),
@@ -148,7 +142,6 @@ Reg_16 reg_r4 (
 Reg_16 reg_r5 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[5]),
@@ -159,7 +152,6 @@ Reg_16 reg_r5 (
 Reg_16 reg_r6 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[6]),
@@ -170,7 +162,6 @@ Reg_16 reg_r6 (
 Reg_16 reg_r7 (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iR(OBUSWIRES),
 	.iRin(Rin[7]),
@@ -185,7 +176,6 @@ Reg_16 reg_r7 (
 Reg_16	reg_a (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iRin(Ain),
 	.iR(OBUSWIRES),
@@ -196,7 +186,6 @@ Reg_16	reg_a (
 Reg_16	reg_g (
 	// Global Signals
 	.iClk(ICLK),
-	.iRst_n(IRST_N),
 	// Inputs
 	.iRin(Gin),
 	.iR(Result),

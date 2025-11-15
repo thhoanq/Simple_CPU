@@ -44,9 +44,9 @@ wire			RoutX_cond, RoutY_cond;
  *                            Combinational Logic                            *
  *****************************************************************************/
 
-assign I = iIR[8:6];	// instruction
-assign X = iIR[5:3];	// source
-assign Y = iIR[2:0];	// destination
+assign I = iIR[8:6];	//instruction
+assign X = iIR[5:3];	//destination
+assign Y = iIR[2:0];	//source
 
 // State (2-to-4 decoder)
 assign ST0 = ~iState[1] & ~iState[0];

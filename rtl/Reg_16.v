@@ -1,8 +1,7 @@
-// 16-bit Register
+// Register 16-bit
 module Reg_16 (
 	// Global signals
 	input 							iClk,
-	input 							iRst_n,
 
 	// Inputs
 	input 							iRin, 		// Write enable
@@ -13,9 +12,7 @@ module Reg_16 (
 );
 
 always @(posedge iClk) begin
-	if(!iRst_n)
-		oR <= 16'b0;
-	else if (iRin)
+	if (iRin)
 		oR <= iR;
 end
 endmodule

@@ -352,13 +352,8 @@ module fa_0 (
 	output		carry_out
 );
 
-wire a_xor_b;
-wire a_and_b;
-
-assign a_xor_b = in_x ^ in_y;
-assign a_and_b = in_x & in_y;
-assign sum_out   = a_xor_b; 
-assign carry_out = a_and_b;
+assign sum_out   = in_x ^ in_y; 
+assign carry_out = in_x & in_y;
 endmodule
 
 
