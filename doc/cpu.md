@@ -5,7 +5,7 @@
 # Control Unit
 The expression for output signals:
 
-* Clear = <span style="text-decoration: overline;">Reset_n</span> + Done + (<span style="text-decoration: overline;">Run</span>T<sub>0</sub>)
+* Clear = !Reset_n + Done + (!RunT<sub>0</sub>)
 * IRin = RunT<sub>0</sub>
 * DINout = I<sub>1</sub>T<sub>1</sub>
 * Done = (I<sub>0</sub> + I<sub>1</sub>)T<sub>1</sub> + (I<sub>2</sub> + I<sub>3</sub>)T<sub>3</sub>
@@ -13,8 +13,8 @@ The expression for output signals:
 * Gin = (I<sub>2</sub> + I<sub>3</sub>)T<sub>2</sub>
 * Gout = (I<sub>2</sub> + I<sub>3</sub>)T<sub>3</sub>
 * AddSub = I<sub>3</sub>T<sub>2</sub>
-* R<span style="color:red">i</span><sub>in</sub> = (I<sub>0</sub> + I<sub>1</sub>)T<sub>1</sub>X<sub><span style="color:red">i</span></sub> + (I<sub>2</sub> + I<sub>3</sub>)T<sub>3</sub>X<sub><span style="color:red">i</span></sub> with 0 &le; <span style="color:red">i</span> &le; 7
-* R<span style="color:red">i</span><sub>out</sub> = I<sub>0</sub>T<sub>1</sub>Y<sub><span style="color:red">i</span></sub> + (I<sub>2</sub>  + I<sub>3</sub>)(T<sub>1</sub>X<sub><span style="color:red">i</span></sub> + T<sub>2</sub>Y<sub><span style="color:red">i</span></sub>) with 0 &le; <span style="color:red">i</span> &le; 7
+* R[i]<sub>in</sub> = (I<sub>0</sub> + I<sub>1</sub>)T<sub>1</sub>X<sub>[i]</sub> + (I<sub>2</sub> + I<sub>3</sub>)T<sub>3</sub>X<sub>[i]</sub> &mdash; with 0 &le; i &le; 7
+* R[i]<sub>out</sub> = I<sub>0</sub>T<sub>1</sub>Y<sub>[i]</sub> + (I<sub>2</sub>  + I<sub>3</sub>)(T<sub>1</sub>X<sub>[i]</sub> + T<sub>2</sub>Y<sub>[i]</sub>) &mdash; with 0 &le; i &le; 7
 
 
 | Operation     | Function performed |
